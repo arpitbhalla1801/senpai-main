@@ -1,0 +1,35 @@
+{
+  "name": "cmd-handler-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "atob": "^2.1.2",
+    "axios": "^0.21.1",
+    "canvacord": "^5.0.8",
+    "common-tags": "^1.8.0",
+    "custom-translate": "^2.2.8",
+    "discord.js": "^12.5.1",
+    "discordjsbot-commands": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "instagram-api.js": "0.0.7",
+    "jumble-words": "^1.0.1",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^5.11.17",
+    "node-fetch": "^2.6.1",
+    "pokecord": "^1.0.0",
+    "topgg-autoposter": "1.1.6",
+    "twitter-api.js": "0.0.7",
+    "weather-js": "^2.0.0"
+  }
+}
