@@ -11,7 +11,7 @@ module.exports = {
       let responses = [
         "Yes",
         "No",
-        "definitely",
+        "Definitely",
         "Absolutely",
         "Not in a million years",
         "Never",

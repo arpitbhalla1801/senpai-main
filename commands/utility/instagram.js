@@ -31,6 +31,7 @@ module.exports = {
         message.channel.send(embed);
       } catch (e) {
         message.channel.send(`Sorry i can't find this user`)
+        message.channel.send(e.message)
       }
   }
 }

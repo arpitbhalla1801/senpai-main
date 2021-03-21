@@ -1,5 +1,5 @@
 const prefixSchema = require("../../schemas/config");
-const prefix = "$";
+const default_prefix = "$";
 module.exports = {
   name: "setsuggest",
   description: "Set the suggestions channel for the server!",
@@ -15,20 +15,20 @@ module.exports = {
       if (!data) {
         let newPrefix = new prefixSchema({
           Guild: message.guild.id,
-          Prefix: prefix,
+          Prefix: default_prefix,
           Schannel: channel_id,
           Rchannel: null,
           Wchannel: null,
         });
         newPrefix.save();
         message.channel.send(
-          `Suggestion channel has been updated to <#${channel_id}>`
+          `Suggestion channel has been set to <#${channel_id}>`
         );
       } else {
         data.Schannel = channel_id;
         data.save();
         message.channel.send(
-          `Suggestion channel has been updated to <#${channel_id}>`
+          `Suggestion channel has been set to <#${channel_id}>`
         );
       }
     });

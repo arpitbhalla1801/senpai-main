@@ -21,11 +21,11 @@ module.exports = {
           Wchannel: null
         });
         newPrefix.save();
-        message.channel.send(`Prefix has been updated to **${new_prefix}**`);
+        message.channel.send(`Prefix has been set to **${new_prefix}**`);
       } else {
         data.Prefix = new_prefix;
         data.save();
-        message.channel.send(`Prefix has been updated to **${new_prefix}**`);
+        message.channel.send(`Prefix has been set to **${new_prefix}**`);
       }
     });
   },
