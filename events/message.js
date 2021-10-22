@@ -66,7 +66,7 @@ module.exports.run = async (client, message) => {
   if (command.ownerOnly) {
     if (!owners.includes (message.author.id))
       return message.channel.send (
-        'This command can only be used by the bot owner.'
+        'This command is currently in developer mode!'
       );
   }
 

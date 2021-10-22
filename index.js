@@ -27,5 +27,21 @@ config({
 ["command", "events"].forEach(handler => {
     require(`./handlers/${handler}`)(client);
 });
+
+//keepalive
+
 keepAlive();
+
+//music integration
+
+const distube = require('distube')
+const player = new distube(client)
+
+player.on("playSong", (message, queue, song) => {
+  message.channel.send(`${song.name} has started playing!`)
+})
+
+client.player = player
+
+
 client.login("NzE4MDkzMjUxMjc3NjE5Mjc0.Xtj2dA.GImlFhajxI1fdDahMwpZKJyAI88")
